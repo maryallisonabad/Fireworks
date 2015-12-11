@@ -13,7 +13,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    firework.cpp
 
 HEADERS  += mainwindow.h \
     firework.h

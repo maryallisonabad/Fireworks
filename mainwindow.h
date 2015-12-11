@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtGui>
+#include <QOpenGLWidget>
 
 namespace Ui {
 class MainWindow;
@@ -14,6 +16,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    void resizeGL(int x, int y);
 
 private:
     Ui::MainWindow *ui;
