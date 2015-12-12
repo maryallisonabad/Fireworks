@@ -13,6 +13,9 @@ struct Particle {
     float mass;
 };
 
+const int Max_Particles = 10000;
+Firework FireworkContainer[Max_Particles];
+
 struct Firework {
     Firework() {
         //Generating random x (y stays the same)
@@ -39,6 +42,7 @@ struct Firework {
     QColor color; // Made this a QColor instead of a QRgb
 
     float xLoc; //Initial X Location;
+    float life; //Remaining life of particle (when should it die)?
     bool hasExploded;
 
     void burst();
