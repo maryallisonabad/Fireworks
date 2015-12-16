@@ -9,11 +9,14 @@ struct Velocity {
     float speed;
 };
 
+void mainLaunch();
+
 struct Particle {
     float mass;
     Velocity velocity;
     QColor color;
     float xLoc; //Initial X Location;
+    float yLoc; //Always starts at 0
 };
 
 const int Max_Particles = 100;
@@ -22,6 +25,8 @@ const int Max_Particles = 100;
 struct Firework {
     GLfloat gravity;
     float radius;
+    bool hasExploded;
+    float timeUntilLaunch;
     vector<Particle> particles;
 
     void initParticles();
