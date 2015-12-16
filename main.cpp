@@ -9,6 +9,23 @@ int main(int argc, char *argv[])
     w.show();
 //    mainLaunch();
 
+    QApplication app(argc, argv);
+
+    // Set OpenGL version
+//    QSurfaceFormat format;
+//    format.setSamples(8);
+//    format.setDepthBufferSize(32);
+//    format.setStencilBufferSize(8);
+//    format.setVersion(3, 3);
+//    format.setSwapBehavior(QSurfaceFormat::DoubleBuffer);
+//    format.setProfile(QSurfaceFormat::CoreProfile);
+//    QSurfaceFormat::setDefaultFormat(format);
+
+
+    // Show main window
+
+    //Couldn't get proper particle veiw window working
+
     return a.exec();
 }
 

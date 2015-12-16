@@ -17,6 +17,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     void resizeGL(int x, int y);
+//    void initializeGL(); // QGLWidget OpenGL interface
+//    void paintGL();
 
 private:
     Ui::MainWindow *ui;
